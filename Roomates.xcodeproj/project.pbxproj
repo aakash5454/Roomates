@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07F30A451B7A46DA00B6DE26 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F30A441B7A46DA00B6DE26 /* Group.m */; };
 		3399CF451B7876AE00A3060D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399CF441B7876AE00A3060D /* main.m */; };
 		3399CF481B7876AE00A3060D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399CF471B7876AE00A3060D /* AppDelegate.m */; };
-		3399CF4B1B7876AE00A3060D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399CF4A1B7876AE00A3060D /* ViewController.m */; };
 		3399CF4E1B7876AE00A3060D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3399CF4C1B7876AE00A3060D /* Main.storyboard */; };
 		3399CF501B7876AE00A3060D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3399CF4F1B7876AE00A3060D /* Images.xcassets */; };
 		3399CF531B7876AE00A3060D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3399CF511B7876AE00A3060D /* LaunchScreen.xib */; };
 		3399CF5F1B7876AE00A3060D /* RoomatesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399CF5E1B7876AE00A3060D /* RoomatesTests.m */; };
+		3399CF6B1B7881B800A3060D /* SKYToGetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399CF6A1B7881B800A3060D /* SKYToGetTableViewController.m */; };
+		3399CF6E1B7881E700A3060D /* SKYAddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399CF6D1B7881E700A3060D /* SKYAddItemViewController.m */; };
+		3399CF711B78824C00A3060D /* SKYGroupsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399CF701B78824C00A3060D /* SKYGroupsTableViewController.m */; };
+		3399CF741B78827000A3060D /* SKYAddGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399CF731B78827000A3060D /* SKYAddGroupViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +31,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07F30A431B7A46DA00B6DE26 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		07F30A441B7A46DA00B6DE26 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
 		3399CF3F1B7876AE00A3060D /* Roomates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roomates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3399CF431B7876AE00A3060D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3399CF441B7876AE00A3060D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3399CF461B7876AE00A3060D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3399CF471B7876AE00A3060D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3399CF491B7876AE00A3060D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3399CF4A1B7876AE00A3060D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3399CF4D1B7876AE00A3060D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3399CF4F1B7876AE00A3060D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3399CF521B7876AE00A3060D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3399CF581B7876AE00A3060D /* RoomatesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoomatesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3399CF5D1B7876AE00A3060D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3399CF5E1B7876AE00A3060D /* RoomatesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoomatesTests.m; sourceTree = "<group>"; };
+		3399CF691B7881B800A3060D /* SKYToGetTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKYToGetTableViewController.h; sourceTree = "<group>"; };
+		3399CF6A1B7881B800A3060D /* SKYToGetTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKYToGetTableViewController.m; sourceTree = "<group>"; };
+		3399CF6C1B7881E700A3060D /* SKYAddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKYAddItemViewController.h; sourceTree = "<group>"; };
+		3399CF6D1B7881E700A3060D /* SKYAddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKYAddItemViewController.m; sourceTree = "<group>"; };
+		3399CF6F1B78824C00A3060D /* SKYGroupsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKYGroupsTableViewController.h; sourceTree = "<group>"; };
+		3399CF701B78824C00A3060D /* SKYGroupsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKYGroupsTableViewController.m; sourceTree = "<group>"; };
+		3399CF721B78827000A3060D /* SKYAddGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKYAddGroupViewController.h; sourceTree = "<group>"; };
+		3399CF731B78827000A3060D /* SKYAddGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKYAddGroupViewController.m; sourceTree = "<group>"; };
+		33E9FA4F1B7A40250048DE1E /* CreateAndAddAGroupProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAndAddAGroupProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +94,11 @@
 		3399CF411B7876AE00A3060D /* Roomates */ = {
 			isa = PBXGroup;
 			children = (
-				3399CF461B7876AE00A3060D /* AppDelegate.h */,
-				3399CF471B7876AE00A3060D /* AppDelegate.m */,
-				3399CF491B7876AE00A3060D /* ViewController.h */,
-				3399CF4A1B7876AE00A3060D /* ViewController.m */,
-				3399CF4C1B7876AE00A3060D /* Main.storyboard */,
+				3399CF7A1B79B6C200A3060D /* IB Views */,
+				3399CF761B78F2F000A3060D /* AppDelegate */,
+				3399CF751B78827300A3060D /* Models */,
+				3399CF681B7881A100A3060D /* ViewController */,
 				3399CF4F1B7876AE00A3060D /* Images.xcassets */,
-				3399CF511B7876AE00A3060D /* LaunchScreen.xib */,
 				3399CF421B7876AE00A3060D /* Supporting Files */,
 			);
 			path = Roomates;
@@ -117,6 +128,73 @@
 				3399CF5D1B7876AE00A3060D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3399CF681B7881A100A3060D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3399CF771B79B60800A3060D /* GroupsVC */,
+				3399CF781B79B62800A3060D /* ToGetVC */,
+				3399CF791B79B63E00A3060D /* Balance Sheet VC */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		3399CF751B78827300A3060D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				07F30A431B7A46DA00B6DE26 /* Group.h */,
+				07F30A441B7A46DA00B6DE26 /* Group.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3399CF761B78F2F000A3060D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3399CF461B7876AE00A3060D /* AppDelegate.h */,
+				3399CF471B7876AE00A3060D /* AppDelegate.m */,
+				33E9FA4F1B7A40250048DE1E /* CreateAndAddAGroupProtocol.h */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		3399CF771B79B60800A3060D /* GroupsVC */ = {
+			isa = PBXGroup;
+			children = (
+				3399CF6F1B78824C00A3060D /* SKYGroupsTableViewController.h */,
+				3399CF701B78824C00A3060D /* SKYGroupsTableViewController.m */,
+				3399CF721B78827000A3060D /* SKYAddGroupViewController.h */,
+				3399CF731B78827000A3060D /* SKYAddGroupViewController.m */,
+			);
+			name = GroupsVC;
+			sourceTree = "<group>";
+		};
+		3399CF781B79B62800A3060D /* ToGetVC */ = {
+			isa = PBXGroup;
+			children = (
+				3399CF691B7881B800A3060D /* SKYToGetTableViewController.h */,
+				3399CF6A1B7881B800A3060D /* SKYToGetTableViewController.m */,
+				3399CF6C1B7881E700A3060D /* SKYAddItemViewController.h */,
+				3399CF6D1B7881E700A3060D /* SKYAddItemViewController.m */,
+			);
+			name = ToGetVC;
+			sourceTree = "<group>";
+		};
+		3399CF791B79B63E00A3060D /* Balance Sheet VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Balance Sheet VC";
+			sourceTree = "<group>";
+		};
+		3399CF7A1B79B6C200A3060D /* IB Views */ = {
+			isa = PBXGroup;
+			children = (
+				3399CF4C1B7876AE00A3060D /* Main.storyboard */,
+				3399CF511B7876AE00A3060D /* LaunchScreen.xib */,
+			);
+			name = "IB Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +297,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3399CF4B1B7876AE00A3060D /* ViewController.m in Sources */,
+				3399CF741B78827000A3060D /* SKYAddGroupViewController.m in Sources */,
 				3399CF481B7876AE00A3060D /* AppDelegate.m in Sources */,
+				07F30A451B7A46DA00B6DE26 /* Group.m in Sources */,
+				3399CF711B78824C00A3060D /* SKYGroupsTableViewController.m in Sources */,
 				3399CF451B7876AE00A3060D /* main.m in Sources */,
+				3399CF6B1B7881B800A3060D /* SKYToGetTableViewController.m in Sources */,
+				3399CF6E1B7881E700A3060D /* SKYAddItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +500,7 @@
 				3399CF641B7876AE00A3060D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3399CF651B7876AE00A3060D /* Build configuration list for PBXNativeTarget "RoomatesTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +509,7 @@
 				3399CF671B7876AE00A3060D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

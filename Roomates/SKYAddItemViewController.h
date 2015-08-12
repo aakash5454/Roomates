@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SKYAddItemViewController.h
 //  Roomates
 //
 //  Created by Sky on 8/10/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface SKYAddItemViewController : UIViewController
 
 @end
-
