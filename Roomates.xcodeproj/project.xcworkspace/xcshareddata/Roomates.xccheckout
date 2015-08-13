@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3CFF3416-ABFF-426C-B425-281DB870D773</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Roomates</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1B3C5FCB459746561FB2E4AAB88EA44681D53CBD</key>
+		<string>https://github.com/aakash5454/Roomates.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Roomates.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1B3C5FCB459746561FB2E4AAB88EA44681D53CBD</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/aakash5454/Roomates.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1B3C5FCB459746561FB2E4AAB88EA44681D53CBD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1B3C5FCB459746561FB2E4AAB88EA44681D53CBD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Roomates</string>
+		</dict>
+	</array>
+</dict>
+</plist>

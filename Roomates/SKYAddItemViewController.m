@@ -7,8 +7,11 @@
 //
 
 #import "SKYAddItemViewController.h"
+#import "Item.h"
 
 @interface SKYAddItemViewController ()
+
+@property (weak, nonatomic) IBOutlet UITextField *addItemTextField;
 
 @end
 
@@ -19,9 +22,11 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)createItem
+{
+    Item *item = [[Item alloc] init];
+    item.name = self.addItemTextField.text;
+    [self.createAndAddAToGetItemDelegate willAddAItem:item ];
 }
 
 #pragma mark- IBActions
@@ -33,6 +38,13 @@
 
 - (IBAction)addTapped:(id)sender
 {
+    
+    if (![self.addItemTextField.text isEqualToString:@""])
+    {
+        [self createItem];
+    }
+
+    [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 

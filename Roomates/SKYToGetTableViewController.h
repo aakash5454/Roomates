@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CreateAndAddAToGetItemProtocol.h"
 
-@interface SKYToGetTableViewController : UITableViewController
+@interface SKYToGetTableViewController : UITableViewController <CreateAndAddAToGetItemProtocol>
 
 @end

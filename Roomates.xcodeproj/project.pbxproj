@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		07F30A451B7A46DA00B6DE26 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F30A441B7A46DA00B6DE26 /* Group.m */; };
+		07F30A491B7BF39800B6DE26 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F30A481B7BF39800B6DE26 /* Item.m */; };
 		3399CF451B7876AE00A3060D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399CF441B7876AE00A3060D /* main.m */; };
 		3399CF481B7876AE00A3060D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399CF471B7876AE00A3060D /* AppDelegate.m */; };
 		3399CF4E1B7876AE00A3060D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3399CF4C1B7876AE00A3060D /* Main.storyboard */; };
@@ -33,6 +34,9 @@
 /* Begin PBXFileReference section */
 		07F30A431B7A46DA00B6DE26 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
 		07F30A441B7A46DA00B6DE26 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		07F30A471B7BF39800B6DE26 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		07F30A481B7BF39800B6DE26 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		07F30A4A1B7BF43D00B6DE26 /* CreateAndAddAToGetItemProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAndAddAToGetItemProtocol.h; sourceTree = "<group>"; };
 		3399CF3F1B7876AE00A3060D /* Roomates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roomates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3399CF431B7876AE00A3060D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3399CF441B7876AE00A3060D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 			children = (
 				07F30A431B7A46DA00B6DE26 /* Group.h */,
 				07F30A441B7A46DA00B6DE26 /* Group.m */,
+				07F30A471B7BF39800B6DE26 /* Item.h */,
+				07F30A481B7BF39800B6DE26 /* Item.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -155,6 +161,7 @@
 				3399CF461B7876AE00A3060D /* AppDelegate.h */,
 				3399CF471B7876AE00A3060D /* AppDelegate.m */,
 				33E9FA4F1B7A40250048DE1E /* CreateAndAddAGroupProtocol.h */,
+				07F30A4A1B7BF43D00B6DE26 /* CreateAndAddAToGetItemProtocol.h */,
 			);
 			name = AppDelegate;
 			sourceTree = "<group>";
@@ -297,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F30A491B7BF39800B6DE26 /* Item.m in Sources */,
 				3399CF741B78827000A3060D /* SKYAddGroupViewController.m in Sources */,
 				3399CF481B7876AE00A3060D /* AppDelegate.m in Sources */,
 				07F30A451B7A46DA00B6DE26 /* Group.m in Sources */,

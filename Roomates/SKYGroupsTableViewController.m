@@ -8,6 +8,7 @@
 
 #import "SKYGroupsTableViewController.h"
 #import "SKYAddGroupViewController.h"
+#import "SKYToGetTableViewController.h"
 
 
 
@@ -115,9 +116,21 @@ static NSString *cellIdentifier = @"groupsCell";
     if ([segue.identifier isEqualToString:@"groupsTVCtoAddGroupVC"])
     {
         UINavigationController *nagVC = (UINavigationController*)segue.destinationViewController;
-
         SKYAddGroupViewController *addVC = [nagVC.viewControllers firstObject];
         addVC.CreateAndAddAGroupDelegate = self;
+    }
+    
+    //GroupsToGet
+    
+    if ([segue.identifier isEqualToString:@"GroupsToGet"])
+    {
+        NSIndexPath *indexPath  = [self.groupsTableView indexPathForSelectedRow];
+        NSString *titleForToGetScreen = [self.groupsArray[indexPath.row] name];
+        
+        UINavigationController *nagVC = (UINavigationController*)segue.destinationViewController;
+        SKYToGetTableViewController *toGetVC = [nagVC.viewControllers firstObject];
+        NSString *toGetString = @"To Get items for ";
+        toGetVC.navigationItem.title = [toGetString stringByAppendingString: titleForToGetScreen];
     }
 }
 

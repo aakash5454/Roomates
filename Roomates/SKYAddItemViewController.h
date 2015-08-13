@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CreateAndAddAToGetItemProtocol.h"
 
 @interface SKYAddItemViewController : UIViewController
+
+@property (nonatomic, weak) id<CreateAndAddAToGetItemProtocol> createAndAddAToGetItemDelegate;
 
 @end
