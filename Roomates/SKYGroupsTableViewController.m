@@ -22,9 +22,13 @@ static NSString *cellIdentifier = @"groupsCell";
 
 @implementation SKYGroupsTableViewController
 
+@synthesize nameString;
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initialize];
+    nameString = @"bla";
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

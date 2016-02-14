@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Bfb-Re-GLE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Bfb-Re-GLE">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--Add items-->
@@ -33,7 +34,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add items" id="Xh7-en-H3K">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="sO1-dN-TFU">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="sO1-dN-TFU">
                             <connections>
                                 <action selector="cancelTapped:" destination="qtb-J4-MkQ" id="r87-6x-fPS"/>
                             </connections>
@@ -81,8 +82,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="toGetCell" rowHeight="100" id="n8Q-ad-sai">
+                                <rect key="frame" x="0.0" y="86" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="n8Q-ad-sai" id="Mtv-bD-kIs">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UCY-dI-0Vn">
@@ -119,7 +122,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.30368215922167519" green="1" blue="0.79461231167094748" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <segue destination="Uiv-fQ-p9t" kind="show" id="eWD-77-o9H"/>
+                                    <segue destination="Uiv-fQ-p9t" kind="show" identifier="toItemDetailViewController" id="eWD-77-o9H"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -129,6 +132,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="65c-dF-cZ2">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="c4Q-0Z-dzc">
+                            <connections>
+                                <action selector="cancelTapped:" destination="GwV-Q9-DJY" id="7iQ-Dc-heI"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="fXg-wB-Bji">
                             <connections>
                                 <segue destination="wCR-W0-rVT" kind="presentation" identifier="addItemToGetList" id="Shv-4v-GVv"/>
@@ -266,10 +274,10 @@
             </objects>
             <point key="canvasLocation" x="4314" y="-44"/>
         </scene>
-        <!--View Controller-->
+        <!--Item Detail View Controller-->
         <scene sceneID="UdR-4a-tK3">
             <objects>
-                <viewController id="cRT-oQ-DvI" sceneMemberID="viewController">
+                <viewController id="cRT-oQ-DvI" customClass="SKYItemDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MxH-nO-RTi"/>
                         <viewControllerLayoutGuide type="bottom" id="UYO-lw-nme"/>
@@ -279,11 +287,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="H6Y-I9-bDH"/>
+                    <navigationItem key="navigationItem" id="H6Y-I9-bDH">
+                        <barButtonItem key="leftBarButtonItem" title="Back " id="dXF-Kc-dWL">
+                            <connections>
+                                <action selector="backTapped:" destination="cRT-oQ-DvI" id="hr3-DN-l8Z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w9t-0f-tDS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5914" y="818"/>
+            <point key="canvasLocation" x="5909" y="796"/>
         </scene>
         <!--Groups-->
         <scene sceneID="EXV-vk-Vf3">
@@ -295,8 +309,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="groupsCell" id="TmT-42-5tn">
+                                <rect key="frame" x="0.0" y="86" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TmT-42-5tn" id="uk6-ac-bl0">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>

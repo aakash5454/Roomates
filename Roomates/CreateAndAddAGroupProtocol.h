@@ -11,6 +11,8 @@
 
 @protocol CreateAndAddAGroupProtocol <NSObject>
 
+@property (nonatomic, strong) NSString *nameString; 
+
 -(void)willAddAGroup:(Group*)group;
 
 @end

@@ -8,6 +8,7 @@
 
 #import "SKYToGetTableViewController.h"
 #import "SKYAddItemViewController.h"
+#import "SKYItemDetailViewController.h"
 
 @interface SKYToGetTableViewController ()
 
@@ -64,6 +65,12 @@ static NSString *cellIdentifier = @"toGetCell";
     return cell;
 }
 
+#pragma mark- IBActions
+
+- (IBAction)cancelTapped:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 /*
 // Override to support conditional editing of the table view.
@@ -108,15 +115,21 @@ static NSString *cellIdentifier = @"toGetCell";
     if ([segue.identifier isEqualToString:@"addItemToGetList"])
     {
         UINavigationController *nagVC = (UINavigationController*)segue.destinationViewController;
-        
         SKYAddItemViewController *addItemVC = [nagVC.viewControllers firstObject];
         addItemVC.createAndAddAToGetItemDelegate = self;
+    }
+    else if ([segue.identifier isEqualToString:@"toItemDetailViewController"])
+    {
+        NSIndexPath *indexPath  = [self.toGetTableView indexPathForSelectedRow];
+        NSString *titleForToGetScreen = [self.toGetList[indexPath.row] name];
+        UINavigationController *nagVC = (UINavigationController*)segue.destinationViewController;
+        SKYItemDetailViewController *toItemVC = [nagVC.viewControllers firstObject];
+        NSString *toGetString = @"details";
+        toItemVC.navigationItem.title = [titleForToGetScreen stringByAppendingString: toGetString];
         
     }
-    
-    
-    
 }
+
 
 
 @end
